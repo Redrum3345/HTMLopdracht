@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boekingspagina</title>
+</head>
+<body>
+    <h1>Accomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boekenAccomodatie boeken</h1>
+    <p>Op deze pagina kunt u een campingplek boeken en een aantal foto's en filmpjes bekijken.</p>
+    <h2>Adresgegevens</h2>
+    <form method="post">
+        <label for="naam">Naam:</label>
+        <input type="text" size="30" name="naam" id="naam" required>
+        <br>
+        <br>
+        <label for="adres">Adres:</label>
+        <input type="text" size="30" name="Adres" id="adres" required>
+        <br>
+        <br>
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" size="4" placeholder="1111 AA" maxlength="7" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" required>
+        <br>
+        <br>
+        <label for="woonplaats">Woonplaats:</label>
+        <input type="text" id="woonplaats" size="25" required>
+        <br>
+        <br>
+        <label for="telefoonnr">Telefoonnr:</label>
+        <input type="tel" pattern="[0-9]{9}" required maxlength="10" placeholder="0683412349" name="telefoonnr" id="telefoonnr">
+        <br>
+        <br>
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" size="30" placeholder="loi1234@hotmail.com">
+        </form>
+    <h2>Reservering</h2>
+        <form>
+            <label for="personen">Aantal personen:</label>
+            <input type="number" min="1" max="10"  placeholder="1" name="Personen" id="personen" required>
+            <br>
+            <br>
+            <label for="aankomst">Aankomstdatum:</label>
+            <input type="date" id="aankomst" required>
+            <br>
+            <br>
+            <label for="verblijfsduur">Verblijfsduur:</label>
+            <input type="range" min="2" id="verblijfsduur" max="20" step="2" oninput="this.nextElementSibling.value = this.value"><output>6</output><span> Dagen</span>
+            <br>
+            <br>
+            <label for="verzorging">Verzorging:</label>
+            <select name="verzorging" id="verzorging">
+            <option value="logies">Logies</option>
+            <option value="logiesOntbijt">Logies met ontbijt</option>
+            <option value="halfpension">Halfpension</option>
+            <option value="volpension">Volpension</option>
+            </select>
+            <br>
+            <br>
+            <label for="ja">Annuleringsverzekering:</label>
+            <input type="radio" name="keuze" id="ja">
+            <label for="ja">Ja</label>
+            <input type="radio" name="keuze" id="nee">
+            <label for="nee">Nee</label>
+            <br>
+            <br>
+            <label for="opmerkingen">Opmerkingen:</label>
+            <br>
+            <textarea name="opmerkingen" id="opmerkingen" cols="30" rows="10"></textarea>
+            <br>
+            <button formaction="https://jkorpela.fi/cgi-bin/echo.cgi">Reserveren</button>
+        </form>
+        <section id="ExtraFotos">
+    <h3>Foto's</h3>
+    <figure>
+        <img src="france3.jpg" alt="France3" style="width:20%" height="250">
+        <figcaption>Mooie dorpje vlakbij camping</figcaption>
+    </figure>
+    <figure>
+        <img src="france4.jpg" alt="France4" style="width:20%" height="250">
+        <figcaption>Nog een mooie plek dichtbij!</figcaption>
+    </figure>  
+    <figure>
+        <img src="france5.jpg" alt="France5" style="width:20%" height="250">
+        <figcaption>Op loopafstand!</figcaption>
+    </figure>  
+    </section>
+    
+    <h3>Filmpje</h3>
+    <p>Hier nog een mooi filmpje van een waterval dichtbij de camping!</p>
+    <video width="360" height="260" controls>
+        <source src="nature.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+
+    </video>
+    
+    
+    
+    
+</body>
+</html>
